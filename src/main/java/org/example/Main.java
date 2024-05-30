@@ -174,20 +174,20 @@ public class Main {
 //            System.out.println("40대 이상");
 //        }
 
-        // 문제 : 할인 대상인지 아닌지 출력해주세요.
-
-        // 조건 : 나이가 19세 이하이거나 60세 이상이면 할인 대상입니다.
-        // 조건 : 출력예시 처럼 출력되어야 합니다.
-        // 조건 : `구현시작` 부분만 수정 할 수 있습니다.
-        // 조건 : 4가지 이상의 방법으로 풀어야 합니다.
-        // 조건 : 그 중 2가지 방법은 `&&, ||`없이 풀어야 합니다.
-
-        int age = 60; // 이 값을 바꿔가면서 실행해보세요.
-
-        System.out.println("당신의 나이는 " + age + "살 입니다.");
-
-        // 구현시작
-        // age <= 19 || age >= 60
+//        // 문제 : 할인 대상인지 아닌지 출력해주세요.
+//
+//        // 조건 : 나이가 19세 이하이거나 60세 이상이면 할인 대상입니다.
+//        // 조건 : 출력예시 처럼 출력되어야 합니다.
+//        // 조건 : `구현시작` 부분만 수정 할 수 있습니다.
+//        // 조건 : 4가지 이상의 방법으로 풀어야 합니다.
+//        // 조건 : 그 중 2가지 방법은 `&&, ||`없이 풀어야 합니다.
+//
+//        int age = 60; // 이 값을 바꿔가면서 실행해보세요.
+//
+//        System.out.println("당신의 나이는 " + age + "살 입니다.");
+//
+//        // 구현시작
+//        // age <= 19 || age >= 60
 
 //        // 1
 //        if (age <= 19) {
@@ -228,20 +228,312 @@ public class Main {
 //        if (age >= 60 ) {
 //            System.out.println("할인대상 입니다.");
 //        }
-
-        // 4
-        if (1 <= age && age < 20){
-            System.out.println("할인대상 입니다.");
-        }
-        if (20 <= age && age < 60){
-            System.out.println("할인 대상이 아닙니다.");
-        }
-        if (60 <= age) {
-            System.out.println("할인대상 입니다.");
-        }
+//
+//        // 4
+//        if (1 <= age && age < 20){
+//            System.out.println("할인대상 입니다.");
+//        }
+//        if (20 <= age && age < 60){
+//            System.out.println("할인 대상이 아닙니다.");
+//        }
+//        if (60 <= age) {
+//            System.out.println("할인대상 입니다.");
+//        }
 
 
         // 출력 => 할인대상입니다. 또는 할인 대상이 아닙니다.
+
+
+//        int i = 1;
+//        System.out.println(i);
+//
+//        i = i + 1; // i의 값을 1 증가시킨다
+//        System.out.println(i);
+//
+//        i += 1; // i의 값을 1 증가시킨다
+//        System.out.println(i);
+//
+//        i += 2; // i의 값을 2 증가시킨다
+//        System.out.println(i);
+//
+//        i++; // i의 값을 1 증가시킨다
+//        System.out.println(i);
+//
+//        i--; // i의 값을 1 감소시킨다.
+//        System.out.println(i);
+//
+//        i = i - 2; // i의 값을 2 감소시킨다.
+//        System.out.println(i);
+//
+//        i -= 2; // i의 값을 2 감소시킨다.
+//        System.out.println(i);
+
+
+//        //문제 1
+//        System.out.println("8 * 1 = 8");
+//        System.out.println("8 * 2 = 16");
+//        System.out.println("8 * 3 = 24");
+//
+//        System.out.println("=======================================");
+//
+//        System.out.println("8 * 1 = 8\n8 * 2 = 16\n8 * 3 = 24");
+//
+//        System.out.println("=======================================");
+//
+//        String s = "8 * 1 = 8\n";   // 8 * 1 = 8\n
+//        s = s + "8 * 2 = 16\n";     // 8 * 1 = 8\n"8 * 2 = 16\n
+//        s += "8 * 3 = 24\n";        // 8 * 1 = 8\n"8 * 2 = 16\n8 * 3 = 24\n
+//
+//        System.out.println(s);
+//        System.out.println("=======================================");
+
+//         // 문제 2 ~ 3
+//         int dan = 8;
+//         System.out.println(dan + " * 1 = " + dan * 1);
+//         System.out.println(dan + " * 2 = " + dan * 2);
+//         System.out.println(dan + " * 3 = " + dan * 3);
+
+
+//        // 문제 4
+//        // 조건 : 2부터 9까지의 숫자를 사용하지 않고 구구단 출력을 완성 해주세요.
+//        int dan = 8;
+//
+//        // 수정가능지역 시작
+//        int i = 1;
+//
+//        System.out.println(dan + " * " + i + " = " + dan * i);
+//        i += 1;
+//        System.out.println(dan + " * " + i + " = " + dan * i);
+//        i++;
+//        System.out.println(dan + " * " + i + " = " + dan * i);
+//        i = i + 1;
+//        System.out.println(dan + " * " + i + " = " + dan * i);
+//        i = i + 1;
+//        System.out.println(dan + " * " + i + " = " + dan * i);
+//        i = i + 1;
+//        System.out.println(dan + " * " + i + " = " + dan * i);
+//        i = i + 1;
+//        System.out.println(dan + " * " + i + " = " + dan * i);
+//        i = i + 1;
+//        System.out.println(dan + " * " + i + " = " + dan * i);
+//        i = i + 1;
+//        System.out.println(dan + " * " + i + " = " + dan * i);
+//        i = i + 1;
+//        // 수정가능지역 끝
+//
+//        // 조건 반복문을 사용하지 않고. *100 까지 출력하세요
+
+
+//        // 반복문 while ~ 하는 동안
+//        while (i <= 100) {
+//            System.out.println(dan + " * " + i + " = " + dan * i);
+//            i++;
+//        }
+
+//        int i = 1;                  // 시작점 ~ 부터
+//        while (i <= 100) {          // 조건식 ~ 까지
+//            System.out.println(i);
+//            i +=10;                 // ~만큼 , 방향
+//        }
+//
+//        System.out.println(i);
+//
+//        System.out.println("증가");
+//        int k = 1;                  // 1번 초기
+//        while (k <= 10) {           // 2번 조건
+//            System.out.println(k);  // 4번
+//            k += 2;                 // 3번 스텝
+//        }
+//        System.out.println("감소");
+//        int i = 10;
+//        while (i >= 1) {
+//            System.out.println(i);
+//            i -= 2;
+//        }
+
+
+//        // 문제 1
+//        int dan = 8;
+//        int i = 1;
+//
+//        while(i <= 1000) {
+//            System.out.println(dan + " * " + i + " = " + dan * i);
+//            i++;
+//        }
+
+//        // 문제 2
+//
+//        int i = 1;
+//
+//        while (i <= 5) {
+//            System.out.println(i);
+//            i++;
+//        }
+
+//        // 문제 3  / -100부터 25까지 출력해주세요.
+//
+//        int i = -100;
+//        while (i <= 25) {
+//            System.out.println(i);
+//            i++;
+//        }
+
+        // 문제 4 / 단을 `* 1000`부터 1`까지 출력해주세요.
+
+
+        // 문제 5  / 단을 `* 1000`부터 `* -500`까지 출력해주세요.
+
+//        int dan = 8;
+//        int i = 1000;
+//
+//        while (1000 >= i && i >= -500) {
+//            System.out.println(dan + "*" + i + "=" + dan * i);
+//            i--;
+//        }
+
+//        // 문제 6  / 1부터 5까지의 합을 더한 결과를 출력해주세요.
+//
+//        int i = 1;
+//        int sum = 0;
+//
+//        while (i <= 5) {
+//            //sum = sum + i;
+//            sum += i;
+//            i++;
+//            // i = i + 1;
+//            // i += 1;
+//        }
+//        System.out.println(sum);
+
+//        // 문제 7  / -100부터 25까지의 합을 더한 결과를 출력해주세요.
+//
+//        int i = -100;
+//        int sum = 0;
+//        while (i <= 25) {
+//
+//            sum = sum + i;
+//
+//            System.out.println(sum);
+//            i++;
+//        }
+
+//        // 문제 8  / 1부터 3까지 출력하는 작업을 10번 해주세요. (2중 while문 사용)
+//
+//        int i = 1;
+//        while ( i <= 10) {
+//            System.out.println("i: " + i);
+//
+//            int k = 1;
+//            while (k <= 3) {
+//                System.out.println(k);
+//                k++;
+//            }
+//            i++;
+//        }
+
+
+//        // 반복문 for
+//
+//        System.out.println("==== while ====");
+//        int i = 1;              // 초기식;
+//        while (i <= 3) {        // 조건식
+//            System.out.println(i);
+//            i++;                // 증감식;
+//        }
+//
+//
+//        System.out.println("==== for ====");
+//
+//        for (int j = 1; j <= 3; j++) {
+//            // 초기식; 조건식; 증감식
+//            System.out.println(j);
+//        }
+
+
+//        // 문제 1  / 단을 * 1000까지 출력해주세요.
+//        int dan = 8;
+//
+//        for (int i = 1; i <= 1000; i++) {
+//            System.out.println(dan + " * " + i + " = " + dan * i);
+//
+//        }
+
+//        // 문제 2  / 1부터 5까지 출력해주세요.
+//
+//        for (int i = 1; i <= 5; i++) {
+//            System.out.println(i);
+//
+//        }
+
+//        // 문제 3  / -100부터 25까지 출력해주세요.
+//
+//        for (int i = -100; i <= 25; i++) {
+//            System.out.println(i);
+//
+//        }
+
+//        // 문제 4 / 단을 `* 1000`부터 1`까지 출력해주세요.
+//
+//        int dan = 8;
+//
+//        for (int i = 1000; i >= 1; i--) {
+//            System.out.println(dan + "*" + i + "=" + dan * i);
+//        }
+
+//        // 문제 5  / 단을 `* 1000`부터 `* -500`까지 출력해주세요.
+//
+//        int dan = 8;
+//
+//        for (int i = 1000; 1000 >= i && i >= -500; i--) {
+//            System.out.println(dan + "*" + i + "=" + dan * i);
+//
+//        }
+
+//        // 문제 6  / 1부터 5까지의 합을 더한 결과를 출력해주세요.
+//
+//       int sum = 0;
+//
+//       for (int i = 1; i <= 5; i++) {
+//           sum += i;
+////           System.out.println(sum);
+//       }
+//        System.out.println(sum);
+
+        // 문제 7  / -100부터 25까지의 합을 더한 결과를 출력해주세요.
+
+//        int sum = 0;
+//
+//        for (int i = -100; -100 <= i && i <= 25; i++) {
+//            sum += i;
+////            System.out.println(sum);
+//        }
+//        System.out.println(sum);
+
+//        // 문제 8  / 1부터 3까지 출력하는 작업을 10번 해주세요. (2중 while문 사용)
+//
+//        for (int i = 1; i <= 10; i++) {
+//            for (int j = 1; j <= 3; j++) {
+//                System.out.println(j);
+//            }
+//        }
+
+        int rows = 5;
+
+        for (int i = 1; i <= rows; i++) {
+            for (int k = 1; k <= i; k++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        // 순차적으로.
+        // 1. i가 1로 시작. 5가 될때까지 반복하며, i는 1씩 증가한다.
+        // 2. i는 1, 조건식은 5이하로 True. 조건을 만족하고 다음줄을 실행
+        // 3. 다시 for문 k는 1로 시작하고, k와 i가 같을때까지 반복하며, k는 1씩 증가한다.
+        // 4. k는 1, i도 1이며, 조건식은 1 <= 1로 참. 다음줄을 실행한다.
+        // 5. 콘솔창에 "* " 별과공백 하나의 문자열 찍는다.
+        // 6. 다시 가장 가까운 for문으로 되돌아가 k는 1 증가하여 2가 되었으나 i는 아직 1.
+        // 7. 2 <= 1 조건식이 거짓이므로 false. 반복문을 빠져나간다.
+        // 8. 다음줄을 실행하며 println으로 한 줄 개행한다.
 
 
     }
