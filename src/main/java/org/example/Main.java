@@ -1,6 +1,8 @@
 package org.example;
 
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -517,14 +519,16 @@ public class Main {
 //            }
 //        }
 
-        int rows = 5;
+//        int rows = 5;
+//
+//        for (int i = 1; i <= rows; i++) {
+//            for (int k = 1; k <= i; k++) {
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
 
-        for (int i = 1; i <= rows; i++) {
-            for (int k = 1; k <= i; k++) {
-                System.out.print("* ");
-            }
-            System.out.println();
-        }
+
         // 순차적으로.
         // 1. i가 1로 시작. 5가 될때까지 반복하며, i는 1씩 증가한다.
         // 2. i는 1, 조건식은 5이하로 True. 조건을 만족하고 다음줄을 실행
@@ -534,6 +538,201 @@ public class Main {
         // 6. 다시 가장 가까운 for문으로 되돌아가 k는 1 증가하여 2가 되었으나 i는 아직 1.
         // 7. 2 <= 1 조건식이 거짓이므로 false. 반복문을 빠져나간다.
         // 8. 다음줄을 실행하며 println으로 한 줄 개행한다.
+
+
+//        //24_05_31 4일차
+//
+//        // 자바의 타입(자료형)
+//        // 1. 기본 타입(있음)
+//        // 2. 참조 타입(없음)
+//
+//            // 논리 (ture, false) -> boolean
+//            boolean b = true; // 1 > 2 // 2 > 1
+//
+//            // 문자
+//            char c = 'd';
+//            System.out.println(c);
+//
+//            // 정수
+//            byte bb = 40;               // -128 ~ 127
+//            System.out.println(bb);
+//            short s = 40;               // 약 -32000 ~ 32000
+//            System.out.println(s);
+//            int i = 40;                 // 약 -21억 ~ 21억
+//            System.out.println(i);
+//            long l = 40L;                // 그 이상
+//            System.out.println(l);
+//
+//            // 실수
+//            float f = 3.14f;            // 4바이트
+//            double d = 3.14;            // 8바이트
+//
+//            // 참조 타입
+//            String ss = "Hi";
+
+//            int base = 3, exponent = 4;
+//            long result = 1;
+//
+//            for (; exponent != 0; --exponent) {         // 전위연산 ++n  / 후위연산  n++
+//                    result += base;
+//            }
+//            System.out.println("Answer : " + result);
+
+
+//            // 피보나치의 수열
+//            int n = 10, firstTerm = 0, secondTerm = 1;
+//
+//            for (int i = 1; i <= n; ++i) {
+//                    System.out.print(firstTerm + ", ");
+//
+//                    int nextTerm = firstTerm + secondTerm;
+//                    firstTerm = secondTerm;
+//                    secondTerm = nextTerm;
+//            }
+
+
+//            // 부동소수점 floating point  - 근사값(근사치)
+//            // => 정확도의 문제 발생.
+//            double a = 2.1;
+//            double a2 = a * 10;
+//
+//            if ((a2 * 3) == 63) {
+//                    System.out.println("같아");
+//            } else {
+//                    System.out.println("달라");
+//            }
+//
+//            System.out.println(a);
+//            System.out.println(a2);
+
+            // 참조변수
+//            String s = "안녕";            // 참조변수는 보통 4byte를 먹지만, JVM의 메모리 할당에 따라서 달라진다.
+
+
+
+//            int a = 10;
+//            // int[] arr = new 설계도;
+//            int[] arr = new int[3];             // int[] 는 int 와 달라서 기본변수가 아닌 참조변수 이다.
+//
+//            arr[0] = 10;
+//            arr[1] = 20;
+//            arr[2] = 30;
+//
+//            System.out.println(arr[0]);
+//            System.out.println(arr[1]);
+//            System.out.println(arr[2]);
+
+            // 배열 안의 값의 총 합, 평균 출력
+
+//            int a = 10;
+//
+//            int[] arr = new int[5];
+//            arr[0] = 10;
+//            arr[1] = 20;
+//            arr[2] = 30;
+//            arr[3] = 40;
+//            arr[4] = 50;
+//
+//
+//            int sum = 0;
+//            int avg = 0;
+////            sum = arr[0] + arr[1] + arr[2] + arr[3] + arr[4];
+//            for (int i = 0; i < arr.length; i++) {
+//                    sum += arr[i];
+//            }
+//            avg = sum / arr.length;
+//            System.out.println(arr.length);
+//
+//            System.out.println("총합: " + sum);
+//            System.out.printf("총합: %d\n", sum);
+//
+//            System.out.println("평균: " + avg);
+//            System.out.printf("평균: %d\n", avg);
+
+
+            // 코드업 문제
+//            System.out.println("\"!@#$%%^&*()\"");
+//
+//            System.out.println("\"C:\\Download\\hello.cpp\"");
+//
+//            System.out.println("Hello, \nWorld!");
+//
+//            System.out.println("\"C:\\test\"");
+//
+//            System.out.println("special characters\n[\\n, \\\", \\\\] is very important");
+
+            // ===============================================
+
+//            Scanner sc = new Scanner(System.in);
+//
+//            char x, y;
+//
+//            x = sc.next().charAt(0);
+//            y = sc.next().charAt(0);
+//
+//            System.out.printf("%c %c", y, x);
+
+            // ===============================================
+
+//            Scanner sc = new Scanner(System.in);
+//
+//            int a, b, c;
+//
+//            a = sc.nextInt();
+//
+//            System.out.printf("%d %d %d", a, a, a);
+
+            // ===============================================
+
+//            // 1019
+//            Scanner sc = new Scanner(System.in);
+//
+//            int year, month, day;
+//
+//            String[] arr = sc.nextLine().split("\\.");
+//            year = Integer.parseInt(arr[0]);
+//            month = Integer.parseInt(arr[1]);
+//            day = Integer.parseInt(arr[2]);
+//
+//            System.out.printf("%04d.%02d.%02d", year,month,day);
+
+            // ================================================
+
+//            // 1021
+//            Scanner sc = new Scanner(System.in);
+//
+//            int code1;
+//            int code2;
+//
+//            String[] arr = sc.nextLine().split("\\-");
+//
+//            code1 = Integer.parseInt(arr[0]);
+//            code2 = Integer.parseInt(arr[1]);
+//
+//            System.out.printf("%d%d", code1,code2);
+
+            // ===============================================
+
+//            // 1022
+//            Scanner sc = new Scanner(System.in);
+//
+//            String data = sc.next();
+//            System.out.println(data);
+//
+            // ===============================================
+
+        // 1023
+
+        Scanner sc = new Scanner(System.in);
+
+        float f;
+
+
+
+
+
+
+
 
 
     }
