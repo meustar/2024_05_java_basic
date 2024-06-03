@@ -605,9 +605,8 @@ public class Main {
 //            System.out.println(a);
 //            System.out.println(a2);
 
-            // 참조변수
+        // 참조변수
 //            String s = "안녕";            // 참조변수는 보통 4byte를 먹지만, JVM의 메모리 할당에 따라서 달라진다.
-
 
 
 //            int a = 10;
@@ -622,7 +621,7 @@ public class Main {
 //            System.out.println(arr[1]);
 //            System.out.println(arr[2]);
 
-            // 배열 안의 값의 총 합, 평균 출력
+        // 배열 안의 값의 총 합, 평균 출력
 
 //            int a = 10;
 //
@@ -650,7 +649,7 @@ public class Main {
 //            System.out.printf("평균: %d\n", avg);
 
 
-            // 코드업 문제
+        // 코드업 문제
 //            System.out.println("\"!@#$%%^&*()\"");
 //
 //            System.out.println("\"C:\\Download\\hello.cpp\"");
@@ -661,7 +660,7 @@ public class Main {
 //
 //            System.out.println("special characters\n[\\n, \\\", \\\\] is very important");
 
-            // ===============================================
+        // ===============================================
 
 //            Scanner sc = new Scanner(System.in);
 //
@@ -672,7 +671,7 @@ public class Main {
 //
 //            System.out.printf("%c %c", y, x);
 
-            // ===============================================
+        // ===============================================
 
 //            Scanner sc = new Scanner(System.in);
 //
@@ -682,7 +681,7 @@ public class Main {
 //
 //            System.out.printf("%d %d %d", a, a, a);
 
-            // ===============================================
+        // ===============================================
 
 //            // 1019
 //            Scanner sc = new Scanner(System.in);
@@ -696,7 +695,7 @@ public class Main {
 //
 //            System.out.printf("%04d.%02d.%02d", year,month,day);
 
-            // ================================================
+        // ================================================
 
 //            // 1021
 //            Scanner sc = new Scanner(System.in);
@@ -711,7 +710,7 @@ public class Main {
 //
 //            System.out.printf("%d%d", code1,code2);
 
-            // ===============================================
+        // ===============================================
 
 //            // 1022
 //            Scanner sc = new Scanner(System.in);
@@ -719,21 +718,128 @@ public class Main {
 //            String data = sc.next();
 //            System.out.println(data);
 //
-            // ===============================================
+        // ===============================================
 
         // 1023
 
-        Scanner sc = new Scanner(System.in);
-
-        float f;
-
-
+//        Scanner sc = new Scanner(System.in);
+//
+//        float f;
 
 
+//        // 나 정수 100개 컨트롤
+//        int a0 = 1;
+//        int a1 = 2;
+//        int a2 = 3;
+//
+//        int a99 = 100;
+////        int sum = a0 + a1 + a2 + ... a99;
+//
+//        int[] arr = new int[100];
+//        for (int i = 0; i <= 99; i++) {
+//            arr[i] = i + 1;
+//        }
+//        int sum2 = 0;
+//        for (int i = 0; i <= 99; i++) {
+//            sum2 += arr[i];
+//        }
+//
+//        System.out.println("sum2: " + sum2);
 
 
+//        boolean[] arr1 = new boolean[3];
+//        arr1[0] = true;
+//        arr1[1] = false;
+//        arr1[2] = true;
+//
+//        System.out.println(arr1[0]);        //t
+//        System.out.println(arr1[1]);        //f
+//        System.out.println(arr1[2]);        //t
+//        System.out.println(arr1.length);    // 3
+//
+//        double[] arr2 = new double[3];      //{3.14, 7.77, 11.11}
+//        arr2[0] = 3.14;
+//        arr2[1] = 7.77;
+//        arr2[2] = 11.11;
+//
+//        System.out.println(arr2[0]);
+//        System.out.println(arr2[1]);
+//        System.out.println(arr2[2]);
+//
+//        int[] arr3 = new int[10];
+////        for (int i = 0; i < 10; i++) {
+////            arr3[i] = i + 1;
+//        for (int i = 0; i < arr3.length; i++) {
+//            arr3[i] = i + 1;
+//
+//            System.out.println(arr3[i]);
+//        }
 
+//        int[] arr1 = new int[6];            // 1차원 배열 ( 선형 구조 )
+//        arr1[0] = 1;
+//        arr1[1] = 2;
+//        arr1[2] = 3;
+//        arr1[3] = 4;
+//        arr1[4] = 5;
+//        arr1[5] = 6;
+//
+//
+//        int[][] arr2 = new int[2][3];       // 2차원 배열 ( 면 )
+//        arr2[0][0] = 1;
+//        arr2[0][1] = 2;
+//        arr2[0][2] = 3;
+//        arr2[1][0] = 4;
+//        arr2[1][1] = 5;
+//        arr2[1][2] = 6;
+
+
+//        // 객체 - 변수의 묶음, 폴더
+//        int[] person1 = new int[3];     // 사람1 -> (김철수, 나이 22, 키 170.2, 몸무게 60, 010-1234-5678, 결혼여부)
+//        person1[0] = 1;                 //int person1_num = 1;
+//        person1[1] = 22;                //int person1_age = 12;
+//        person1[2] = 170;               //int person1_height = 170;
+//
+//        int[] person2 = new int[3];// 사람2 -> 학생
+//        person1[0] = 2;                 //int person2_num = 1;
+//        person1[0] = 15;                //int person2_age = 15;
+//        person1[0] = 175;               //int person2_height = 175;
+
+        //한계. 1. 각 인스턴스 변수가 무엇을 의미하는지 모름.
+        //한계. 2. int[3]의 설계도로는 이름,키 등의 다른 타입을 표현 할 수 없음.
+
+//        철수 a = new 철수();                //error 1. 철수()라는 설계도(클래스)가 없어서.
+//        a.이름 = "김철수";                  //이름,나이,키 등의 인스턴스 변수가 없어서.
+//        a.나이 = 22;
+//        a.키 = 170.2;
+
+        myObject object = new myObject();
+        object.name = "강기범";
+        object.age = 32;
+        object.weight = 73.5;
+        object.height = 169.8;
+
+
+        System.out.println(object.name);
+        System.out.println(object.age);
+        System.out.println(object.weight);
+        System.out.println(object.height);
+
+        System.out.printf(" 이름 : %s\n 나이 : %d\n 몸무게 : %.2f\n 신장 : %.2f", object.name, object.age, object.weight, object.height);
 
 
     }
+}
+
+//class 철수 {
+//    String 이름;
+//    int 나이;
+//    double 키;
+//}
+
+
+class myObject {
+    String name;
+    int age;
+    double weight;
+    double height;
 }
