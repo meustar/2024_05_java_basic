@@ -812,20 +812,40 @@ public class Main {
 //        a.나이 = 22;
 //        a.키 = 170.2;
 
-        myObject object = new myObject();
-        object.name = "강기범";
-        object.age = 32;
-        object.weight = 73.5;
-        object.height = 169.8;
+//        myObject object = new myObject();
+//        object.name = "강기범";
+//        object.age = 32;
+//        object.weight = 73.5;
+//        object.height = 169.8;
+//
+//
+//        System.out.println(object.name);
+//        System.out.println(object.age);
+//        System.out.println(object.weight);
+//        System.out.println(object.height);
+//
+//        System.out.printf(" 이름 : %s\n 나이 : %d\n 몸무게 : %.2f\n 신장 : %.2f", object.name, object.age, object.weight, object.height);
 
+//        //06.04 5
+//        // 계산기.합(); 메서드 실행 모양
+//        계산기.합(10,20);    //출력: 30       // 계산기 클래스의 합 메소드를 실행하고싶다.
+//
+//        계산기.합(20,50);    //출력: 70       // (a, b) = 인자, 인수, argument
+//
+//        계산기.합(30,40);    //출력: 70
+//
+//        //계산기.합(true, 40);      // -> 메소드에서 정의한 타입으로 넣어야 한다.
+//        //계산기.합(30, 40, 40);    // -> 메소드에서 정의한 인수의 수량을 맞춰야 한다.
+//        계산기.합(9);
 
-        System.out.println(object.name);
-        System.out.println(object.age);
-        System.out.println(object.weight);
-        System.out.println(object.height);
+        // 06/04 마지막 교시
 
-        System.out.printf(" 이름 : %s\n 나이 : %d\n 몸무게 : %.2f\n 신장 : %.2f", object.name, object.age, object.weight, object.height);
-
+        boolean rs2 = 계산기.is_a_bigger_than_b(10, 20);
+        System.out.println(rs2);
+        rs2 = 계산기.is_a_bigger_than_b(240, 20);
+        System.out.println(rs2);
+        rs2 = 계산기.is_a_bigger_than_b(20, 20);
+        System.out.println(rs2);
 
     }
 }
@@ -837,9 +857,37 @@ public class Main {
 //}
 
 
-class myObject {
-    String name;
-    int age;
-    double weight;
-    double height;
+//class myObject {
+//    String name;
+//    int age;
+//    double weight;
+//    double height;
+//}
+
+class 계산기 {
+//    static void 합(int a, int b) {
+//            // 합(int a, int b) => 메소드 시그니쳐.
+//        //int a = 10;                   //합 메소드의 지역변수
+//        //int b = 20;                   // (int a, int b) = 매개변수, parameter
+//
+//        System.out.println("a: " + a);
+//        System.out.println("b: " + b);
+//        System.out.println(a + b);
+//    }
+//    // 위의 메소드 시그니쳐와 달라서. 전혀 다른 메소드.
+//    static  void 합(int c) {
+//
+//        System.out.println(c);
+//    }
+//    // 메소드 오버로딩 overloding? = 다형성(oop의 특징중 하나.) - 오버로딩, 오버라이딩 등.
+
+    //마지막 교시
+    static boolean is_a_bigger_than_b(int a, int b) {
+
+        if (a < b) {
+            return false;
+        }
+        return true;
+    }
+
 }
